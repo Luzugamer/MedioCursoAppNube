@@ -1,0 +1,11 @@
+flowchart TD
+  A[PATCH de cualquier estado actual] --> B[Schema acepta uno de siete estados]
+  B --> C[Asignar estado sin validar transicion]
+  C --> D[Actualizar diagnostico y monto si no null]
+  D --> E{Destino TERMINADO o ENTREGADO?}
+  E -- Si --> F[fecha_finalizacion = ahora UTC]
+  E -- No --> G[Conservar fecha_finalizacion previa]
+  F --> H[Commit y auditoria]
+  G --> H
+  H --> I[ServiceResponse]
+  Note[Sin efectos automaticos sobre stock, pagos o comprobantes] -.-> H

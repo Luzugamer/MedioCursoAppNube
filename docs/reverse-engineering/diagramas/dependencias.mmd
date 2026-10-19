@@ -1,0 +1,20 @@
+flowchart TD
+  App[App.jsx] --> Auth[AuthContext]
+  App --> Perm[permissions.js]
+  App --> Pages[Paginas conectadas]
+  Pages --> Axios[services/api.js]
+  Auth --> Axios
+  Main[main.py] --> Routes[14 routers]
+  Routes --> Deps[api/deps.py]
+  Deps --> Sec[core/security y config]
+  Deps --> DB[db/session]
+  Routes --> Models[models y relaciones]
+  Routes --> Schemas[schemas]
+  Schemas --> Models
+  Models --> DB
+  Routes --> Audit[services/audit_service]
+  Routes --> Notif[services/notification_service]
+  Notif --> Audit
+  Init[db/init_db] --> Models
+  Init --> Sec
+  Legacy[rbac e inventory_service] -. sin callers en rutas activas .-> Models

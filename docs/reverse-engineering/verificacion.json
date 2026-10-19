@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-13",
+  "scope": "verificación estática; sin importar ni ejecutar aplicación",
+  "original_text_files": 113,
+  "binary_metadata_only": 2,
+  "unchanged_source_hashes": true,
+  "python_ast_parsed": 70,
+  "business_http_operations": 42,
+  "orm_tables": 15,
+  "source_line_references_checked": 690,
+  "local_links_checked": 426,
+  "mermaid_sources": 12,
+  "inventory_matches": true,
+  "errors": [],
+  "not_executed": [
+    "pytest",
+    "npm/build/lint",
+    "Docker",
+    "Alembic",
+    "init_db",
+    "render UI/PDF/Mermaid",
+    "conexión PostgreSQL",
+    "HTTP a aplicación o servicios externos"
+  ]
+}

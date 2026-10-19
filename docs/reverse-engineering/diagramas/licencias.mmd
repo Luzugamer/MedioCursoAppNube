@@ -1,0 +1,24 @@
+flowchart TD
+  A[Alta de licencia] --> B{ANTIVIRUS y permanente o sin fechas?}
+  B -- Si --> ERR[422: error de schema]
+  B -- No --> D{No permanente y ambas fechas y fin anterior a inicio?}
+  D -- Si --> ERR
+  D -- No --> E[Validar cliente y equipo por empresa individualmente]
+  E --> F[INSERT; commit y auditoria]
+  F --> G[Construir respuesta con relaciones]
+  H[GET listado] --> G
+  G --> I{Permanente?}
+  I -- Si --> J[PERMANENTE; dias null]
+  I -- No --> K{Tiene fecha_fin?}
+  K -- No --> L[ACTIVA; dias null]
+  K -- Si --> M[delta = fecha_fin - date.today]
+  M --> N{delta negativo?}
+  N -- Si --> O[VENCIDA]
+  N -- No --> P{delta hasta 30 inclusive?}
+  P -- Si --> Q[POR_VENCER]
+  P -- No --> R[ACTIVA]
+  S[PUT] --> T[Validar licencia del ambito y aplicar campos]
+  T --> V{ANTIVIRUS y permanente o sin fechas?}
+  V -- Si --> ERU[400: error de negocio]
+  V -- No --> W[Commit y auditoria sin validar orden de fechas]
+  W --> G

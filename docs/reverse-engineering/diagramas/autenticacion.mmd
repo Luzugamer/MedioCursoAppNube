@@ -1,0 +1,22 @@
+sequenceDiagram
+  actor U as Usuario
+  participant UI as Login y AuthContext
+  participant API as auth.login
+  participant DB as PostgreSQL
+  U->>UI: email y password
+  UI->>API: POST login JSON
+  API->>DB: SELECT User por email y relaciones
+  alt credenciales incorrectas / inactivo / empresa suspendida
+    API-->>UI: 401 / 400 / 403
+  else valido
+    API->>API: bcrypt y JWT con expiracion
+    API->>DB: Audit LOGIN y commit
+    API-->>UI: token, rol, empresa y permisos
+    UI->>UI: localStorage y navegacion
+  end
+  UI->>API: Peticion Bearer
+  API->>API: get_current_user decodifica token
+  API->>DB: SELECT usuario y actividad actuales
+  API->>API: dependencia de rol o permiso
+  API-->>UI: respuesta o error
+  Note over UI,API: Logout solo limpia localStorage

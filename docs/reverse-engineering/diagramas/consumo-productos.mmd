@@ -1,0 +1,23 @@
+sequenceDiagram
+  actor U as Operador
+  participant UI as ServiceDetail
+  participant API as add_product_to_service
+  participant AUD as log_audit
+  participant DB as PostgreSQL
+  U->>UI: Producto y cantidad
+  UI->>API: POST services/id/products
+  API->>API: Exigir cantidad positiva
+  API->>DB: SELECT Service del ambito
+  API->>DB: SELECT Product activo FOR UPDATE
+  alt ausente o stock insuficiente
+    API-->>UI: 404 o 400
+  else disponible
+    API->>API: stock -= cantidad; subtotal = precio * cantidad
+    API->>DB: Preparar SALIDA y ServiceItem
+    API->>AUD: Auditar SALIDA_INVENTARIO
+    AUD->>DB: INSERT Audit y COMMIT de toda la sesion
+    API->>DB: commit adicional y refresh
+    API-->>UI: service_item y stock_actual
+    UI->>UI: Recargar servicio y productos
+  end
+  Note over UI,API: Restriccion de orden cerrada solo en UI

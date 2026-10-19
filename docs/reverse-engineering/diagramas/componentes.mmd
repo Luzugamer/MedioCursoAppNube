@@ -1,0 +1,14 @@
+flowchart LR
+  PC[Navegador React] --> AX[Axios y Bearer]
+  MOV[Captura movil publica] --> UP[Router uploads]
+  AX --> API[FastAPI: routers de negocio]
+  API --> DEP[Identidad y permisos]
+  API --> ORM[SQLAlchemy Session]
+  API --> AUD[log_audit: commit compartido]
+  AUD --> ORM
+  API --> PDF[ReportLab en memoria]
+  ORM --> DB[(PostgreSQL compartido)]
+  UP --> MEM[Sesiones QR en memoria]
+  UP --> DISK[static/uploads]
+  PC --> QR[api.qrserver.com]
+  PC --> IM[Unsplash y placeholder]

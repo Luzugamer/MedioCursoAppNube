@@ -1,0 +1,4481 @@
+{
+  "date": "2026-10-13",
+  "scope": "Análisis estático; dependencias instaladas, .env* y binarios excluidos de lectura",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 208,
+      "sha256": "7170c073a4011cc700bbbb665b4dc5ab535f31b22e92041a151e7f9698dff312",
+      "lines": 26,
+      "status": "verificado (estático)",
+      "module": "X01",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "README.md",
+      "size": 1877,
+      "sha256": "3b4486d0e688a1a29f899808a16696c873c70f18aae54a9efaa8d09b1eef196f",
+      "lines": 49,
+      "status": "verificado (estático)",
+      "module": "X01",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "docker-compose.yml",
+      "size": 1731,
+      "sha256": "b80abdb2c4591c42bd546dc0d8800f20faed9829034a05abf186b506763a1f6a",
+      "lines": 60,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "openapi.json",
+      "size": 31015,
+      "sha256": "ea0b5c1a2987554fd952ae9dbfd409a252d0b162816a5cb273aca030bcffb113",
+      "lines": 1,
+      "status": "verificado (estático)",
+      "module": "X01",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/Dockerfile",
+      "size": 447,
+      "sha256": "fd14562e8caf7172ef5f975e54e8aebfd4c8a1519894cea70d16b95b59bdbf01",
+      "lines": 21,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/alembic.ini",
+      "size": 600,
+      "sha256": "2d6197321e3417e41c6bcc387a9cb9b8bb94ad97a9f8e4a7de5f00d607a02e5e",
+      "lines": 37,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "size": 304,
+      "sha256": "91715e409be34275da89c1b38175dbfb769c4e45869293946fdc226afcd2aa67",
+      "lines": 15,
+      "status": "verificado (estático)",
+      "module": "X01",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/alembic/env.py",
+      "size": 2370,
+      "sha256": "11de8f0a75eee716f6567128e47ca2f1df17dcf866d02950d2315b6e8a479e86",
+      "lines": 104,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "alembic",
+        "app.db.session",
+        "app.models",
+        "logging.config",
+        "pathlib",
+        "sqlalchemy",
+        "sys"
+      ],
+      "evidence": [
+        {
+          "name": "run_migrations_offline",
+          "line": 60
+        },
+        {
+          "name": "run_migrations_online",
+          "line": 80
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/alembic/script.py.mako",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/alembic/versions/0001_initial_schema.py",
+      "size": 231,
+      "sha256": "f3fbf6eb9a8c7382eaafb1d40078638eb63ed219d5ffc183435766f0805ccb75",
+      "lines": 22,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "alembic"
+      ],
+      "evidence": [
+        {
+          "name": "upgrade",
+          "line": 17
+        },
+        {
+          "name": "downgrade",
+          "line": 21
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/alembic/versions/0002_service_items.py",
+      "size": 1967,
+      "sha256": "cf4779593a2d7958acb6bc761267ec0bcc5c515dd81e4d8b4e7a9e90be85773f",
+      "lines": 106,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "alembic",
+        "sqlalchemy"
+      ],
+      "evidence": [
+        {
+          "name": "upgrade",
+          "line": 18
+        },
+        {
+          "name": "downgrade",
+          "line": 90
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/alembic/versions/0003_equipo_opcional_servicios.py",
+      "size": 381,
+      "sha256": "b6ac45a86a94edb20faf26238488c7f7aa5034978e851d509cb0c0aa59c60aa5",
+      "lines": 25,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "alembic"
+      ],
+      "evidence": [
+        {
+          "name": "upgrade",
+          "line": 12
+        },
+        {
+          "name": "downgrade",
+          "line": 20
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/alembic/versions/0004_estado_pagos.py",
+      "size": 1044,
+      "sha256": "53f1b0f55eaeed5c83f09290f2b176f8a5e28cbf9cfbbf2a0f77c207479892e4",
+      "lines": 62,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "alembic",
+        "sqlalchemy"
+      ],
+      "evidence": [
+        {
+          "name": "upgrade",
+          "line": 13
+        },
+        {
+          "name": "downgrade",
+          "line": 42
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/alembic/versions/c3a1528905ae_crear_comprobantes_de_facturacion.py",
+      "size": 8260,
+      "sha256": "76a4aab58a313a893d8d8629aac11ac613b09e9193191a6b1cb7cfd9b4f5fbd9",
+      "lines": 402,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "alembic",
+        "sqlalchemy",
+        "sqlalchemy.dialects"
+      ],
+      "evidence": [
+        {
+          "name": "upgrade",
+          "line": 14
+        },
+        {
+          "name": "downgrade",
+          "line": 343
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/main.py",
+      "size": 2188,
+      "sha256": "8a9af9d157580fd0a0033da3c52c8dc9d069315ed5fd4a0320cc3beec76dcdbb",
+      "lines": 54,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "app.api.routes",
+        "app.core.config",
+        "fastapi",
+        "fastapi.middleware.cors",
+        "fastapi.staticfiles",
+        "os"
+      ],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/deps.py",
+      "size": 3102,
+      "sha256": "52e50069ac1d105af0af5e80619ca67643793aacc477087d929c5c3719bb9bb5",
+      "lines": 74,
+      "status": "verificado (estático)",
+      "module": "F01/F03",
+      "dependencies": [
+        "app.core.config",
+        "app.db.session",
+        "app.models.user",
+        "fastapi",
+        "fastapi.security",
+        "jose",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "get_current_user",
+          "line": 12
+        },
+        {
+          "name": "require_superadmin",
+          "line": 41
+        },
+        {
+          "name": "require_admin",
+          "line": 49
+        },
+        {
+          "name": "check_permission",
+          "line": 57
+        },
+        {
+          "name": "dependency",
+          "line": 58
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/audit.py",
+      "size": 674,
+      "sha256": "a2f25e78991cc4e2f24e16aea8f093c5e65ae38e840d0f182d7c5dace390e284",
+      "lines": 20,
+      "status": "verificado (estático)",
+      "module": "F15",
+      "dependencies": [
+        "app.api.deps",
+        "app.db.session",
+        "app.models.audit",
+        "app.models.user",
+        "app.schemas.audit",
+        "fastapi",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "get_audit_logs",
+          "line": 13
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/auth.py",
+      "size": 2125,
+      "sha256": "181e229699664c390fc180b44c227f088cff2ea850e9a0502a128d224264b6f1",
+      "lines": 56,
+      "status": "verificado (estático)",
+      "module": "F01",
+      "dependencies": [
+        "app.api.deps",
+        "app.core.security",
+        "app.db.session",
+        "app.models.user",
+        "app.schemas.auth",
+        "app.schemas.user",
+        "app.services.audit_service",
+        "fastapi",
+        "sqlalchemy.orm"
+      ],
+      "evidence": [
+        {
+          "name": "login",
+          "line": 14
+        },
+        {
+          "name": "get_me",
+          "line": 55
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/clients.py",
+      "size": 2877,
+      "sha256": "5a66fe89efdcc4284737c1b4137a47559b770bea673807586dbbf3c6c2661342",
+      "lines": 82,
+      "status": "verificado (estático)",
+      "module": "F04",
+      "dependencies": [
+        "app.api.deps",
+        "app.db.session",
+        "app.models.client",
+        "app.models.user",
+        "app.schemas.client",
+        "app.services.audit_service",
+        "fastapi",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "get_clients",
+          "line": 14
+        },
+        {
+          "name": "create_client",
+          "line": 24
+        },
+        {
+          "name": "update_client",
+          "line": 54
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/companies.py",
+      "size": 6840,
+      "sha256": "f836d693416a0b5d441e82544864328d18ac120bcf9898095e6fbb6cbe3202a8",
+      "lines": 199,
+      "status": "verificado (estático)",
+      "module": "F02",
+      "dependencies": [
+        "app.api.deps",
+        "app.core.security",
+        "app.db.session",
+        "app.models.company",
+        "app.models.role",
+        "app.models.user",
+        "app.schemas.company",
+        "app.services.audit_service",
+        "fastapi",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "get_companies",
+          "line": 17
+        },
+        {
+          "name": "create_company_with_admin",
+          "line": 44
+        },
+        {
+          "name": "update_company",
+          "line": 116
+        },
+        {
+          "name": "toggle_company_status",
+          "line": 161
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/dashboard.py",
+      "size": 2295,
+      "sha256": "0e471baeea466e2cb85f776e7bf740fe35790deeea96d317824a15a2598670dc",
+      "lines": 54,
+      "status": "verificado (estático)",
+      "module": "F14",
+      "dependencies": [
+        "app.api.deps",
+        "app.db.session",
+        "app.models.client",
+        "app.models.payment",
+        "app.models.product",
+        "app.models.service",
+        "app.models.user",
+        "app.schemas.dashboard",
+        "datetime",
+        "fastapi",
+        "sqlalchemy",
+        "sqlalchemy.orm"
+      ],
+      "evidence": [
+        {
+          "name": "get_dashboard_stats",
+          "line": 17
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/equipment.py",
+      "size": 2160,
+      "sha256": "0564cd42aab8785a9f87ac564039eeec6d7c20b01b9938cca928f29909f38b27",
+      "lines": 57,
+      "status": "verificado (estático)",
+      "module": "F05",
+      "dependencies": [
+        "app.api.deps",
+        "app.db.session",
+        "app.models.client",
+        "app.models.equipment",
+        "app.models.user",
+        "app.schemas.equipment",
+        "app.services.audit_service",
+        "fastapi",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "get_equipment",
+          "line": 15
+        },
+        {
+          "name": "create_equipment",
+          "line": 29
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/inventory.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "status": "verificado (estático)",
+      "module": "F08",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/invoices.py",
+      "size": 38122,
+      "sha256": "6290206958a4f2279b756a9a18d77cb0ef0373bb9a025aad082ff82a262430e8",
+      "lines": 1494,
+      "status": "verificado (estático)",
+      "module": "F10/F11",
+      "dependencies": [
+        "app.api.deps",
+        "app.db.session",
+        "app.models.client",
+        "app.models.invoice",
+        "app.models.service",
+        "app.models.user",
+        "app.schemas.invoice",
+        "app.services.audit_service",
+        "decimal",
+        "fastapi",
+        "fastapi.responses",
+        "io",
+        "reportlab.lib",
+        "reportlab.lib.enums",
+        "reportlab.lib.pagesizes",
+        "reportlab.lib.styles",
+        "reportlab.lib.units",
+        "reportlab.platypus",
+        "sqlalchemy.orm",
+        "typing",
+        "xml.sax.saxutils"
+      ],
+      "evidence": [
+        {
+          "name": "money",
+          "line": 49
+        },
+        {
+          "name": "get_next_invoice_number",
+          "line": 56
+        },
+        {
+          "name": "safe_text",
+          "line": 77
+        },
+        {
+          "name": "money_text",
+          "line": 88
+        },
+        {
+          "name": "list_invoices",
+          "line": 100
+        },
+        {
+          "name": "get_invoice",
+          "line": 118
+        },
+        {
+          "name": "create_invoice",
+          "line": 147
+        },
+        {
+          "name": "cancel_invoice",
+          "line": 301
+        },
+        {
+          "name": "generate_invoice_pdf",
+          "line": 351
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/licenses.py",
+      "size": 7602,
+      "sha256": "2677108615fd1c3850ca0d43716319ba1279b352c00d7e5a601cce8576d20335",
+      "lines": 207,
+      "status": "verificado (estático)",
+      "module": "F12",
+      "dependencies": [
+        "app.api.deps",
+        "app.db.session",
+        "app.models.client",
+        "app.models.equipment",
+        "app.models.license",
+        "app.models.user",
+        "app.schemas.license",
+        "app.services.audit_service",
+        "datetime",
+        "fastapi",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "compute_license_response",
+          "line": 16
+        },
+        {
+          "name": "get_licenses",
+          "line": 64
+        },
+        {
+          "name": "create_license",
+          "line": 83
+        },
+        {
+          "name": "update_license",
+          "line": 138
+        },
+        {
+          "name": "delete_license",
+          "line": 183
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/notifications.py",
+      "size": 1251,
+      "sha256": "092670549b220e6327019c5439d99785556060042802707fbd5c57c32c537090",
+      "lines": 34,
+      "status": "verificado (estático)",
+      "module": "F15",
+      "dependencies": [
+        "app.api.deps",
+        "app.db.session",
+        "app.models.service",
+        "app.models.user",
+        "app.schemas.notification",
+        "app.services.notification_service",
+        "fastapi",
+        "sqlalchemy.orm"
+      ],
+      "evidence": [
+        {
+          "name": "send_notification",
+          "line": 13
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/payments.py",
+      "size": 6774,
+      "sha256": "f2e60bb6a45cfb2b6c82d3838bf7d6e510f997b407be609e3d1a01e925ecfa16",
+      "lines": 236,
+      "status": "verificado (estático)",
+      "module": "F09",
+      "dependencies": [
+        "app.api.deps",
+        "app.db.session",
+        "app.models.payment",
+        "app.models.service",
+        "app.models.user",
+        "app.schemas.payment",
+        "app.services.audit_service",
+        "decimal",
+        "fastapi",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "money",
+          "line": 21
+        },
+        {
+          "name": "calculate_service_totals",
+          "line": 27
+        },
+        {
+          "name": "list_payments",
+          "line": 71
+        },
+        {
+          "name": "get_service_payments",
+          "line": 81
+        },
+        {
+          "name": "register_payment",
+          "line": 123
+        },
+        {
+          "name": "cancel_payment",
+          "line": 198
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/products.py",
+      "size": 1855,
+      "sha256": "16b9150c829a874cc90ff095e8330fa71a61fbba017d5a8f6f5afd66b8bf8c43",
+      "lines": 51,
+      "status": "verificado (estático)",
+      "module": "F08",
+      "dependencies": [
+        "app.api.deps",
+        "app.db.session",
+        "app.models.product",
+        "app.models.user",
+        "app.schemas.product",
+        "app.services.audit_service",
+        "fastapi",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "get_products",
+          "line": 14
+        },
+        {
+          "name": "create_product",
+          "line": 24
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/services.py",
+      "size": 8648,
+      "sha256": "bf437bd2e0d8f507fc25f2c32a76221be52c4299338c70de8a7aefab470b4cd2",
+      "lines": 272,
+      "status": "verificado (estático)",
+      "module": "F06/F07/F08",
+      "dependencies": [
+        "app.api.deps",
+        "app.db.session",
+        "app.models.client",
+        "app.models.equipment",
+        "app.models.inventory",
+        "app.models.product",
+        "app.models.service",
+        "app.models.service_item",
+        "app.models.user",
+        "app.schemas.service",
+        "app.services.audit_service",
+        "datetime",
+        "fastapi",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "get_services",
+          "line": 26
+        },
+        {
+          "name": "get_service",
+          "line": 41
+        },
+        {
+          "name": "create_service",
+          "line": 61
+        },
+        {
+          "name": "update_service_status",
+          "line": 128
+        },
+        {
+          "name": "add_product_to_service",
+          "line": 176
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/uploads.py",
+      "size": 3972,
+      "sha256": "a659241790f45571e4e5aabe1bc5f178f8c5b69bc195d9c17c30ea43e7406084",
+      "lines": 118,
+      "status": "verificado (estático)",
+      "module": "F13",
+      "dependencies": [
+        "datetime",
+        "fastapi",
+        "os",
+        "pydantic",
+        "typing",
+        "uuid"
+      ],
+      "evidence": [
+        {
+          "name": "SessionResponse",
+          "line": 18
+        },
+        {
+          "name": "upload_file",
+          "line": 25
+        },
+        {
+          "name": "create_upload_session",
+          "line": 53
+        },
+        {
+          "name": "get_upload_session",
+          "line": 70
+        },
+        {
+          "name": "upload_session_photo",
+          "line": 83
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/api/routes/users.py",
+      "size": 4771,
+      "sha256": "9e90ea2c75ca3d379ddef65c79524070afac5484b2a6f8022bb77b3a7a0659e3",
+      "lines": 137,
+      "status": "verificado (estático)",
+      "module": "F03",
+      "dependencies": [
+        "app.api.deps",
+        "app.core.security",
+        "app.db.session",
+        "app.models.company",
+        "app.models.role",
+        "app.models.user",
+        "app.schemas.user",
+        "app.services.audit_service",
+        "fastapi",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "get_roles",
+          "line": 15
+        },
+        {
+          "name": "get_users",
+          "line": 27
+        },
+        {
+          "name": "create_user",
+          "line": 45
+        },
+        {
+          "name": "update_user",
+          "line": 101
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/core/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/core/config.py",
+      "size": 836,
+      "sha256": "2ba8dcc241738abe87affddc3fe9364f38e58e5721348eac28aedbd0eccff420",
+      "lines": 22,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "pydantic",
+        "pydantic_settings",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "Settings",
+          "line": 5
+        },
+        {
+          "name": "cors_origins_list",
+          "line": 15
+        },
+        {
+          "name": "Config",
+          "line": 18
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/core/rbac.py",
+      "size": 813,
+      "sha256": "bc6a5ac1022c9e414cc29918d99c5645aecf018483583eae783954a41b037444",
+      "lines": 21,
+      "status": "verificado (estático)",
+      "module": "F03",
+      "dependencies": [
+        "app.api.deps",
+        "app.models.user",
+        "fastapi",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "RoleChecker",
+          "line": 6
+        },
+        {
+          "name": "__init__",
+          "line": 7
+        },
+        {
+          "name": "__call__",
+          "line": 10
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/core/security.py",
+      "size": 1074,
+      "sha256": "47a33b52ab2b903cc5beecc56288634a561414d0e41af6b2719427b333415d9f",
+      "lines": 33,
+      "status": "verificado (estático)",
+      "module": "F01",
+      "dependencies": [
+        "app.core.config",
+        "datetime",
+        "jose",
+        "passlib.context",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "verify_password",
+          "line": 9
+        },
+        {
+          "name": "get_password_hash",
+          "line": 12
+        },
+        {
+          "name": "create_access_token",
+          "line": 15
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/db/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/db/base.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/db/init_db.py",
+      "size": 7067,
+      "sha256": "84b6b6b9f0803d7c7dc97cb61dcdb36c59fc54b825032c9d72e2bc5f924bfcac",
+      "lines": 174,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "app.core.security",
+        "app.db.session",
+        "app.models.company",
+        "app.models.license",
+        "app.models.product",
+        "app.models.role",
+        "app.models.user",
+        "datetime",
+        "sqlalchemy",
+        "sqlalchemy.orm"
+      ],
+      "evidence": [
+        {
+          "name": "init_db",
+          "line": 9
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/db/session.py",
+      "size": 504,
+      "sha256": "ef0f8278eb9d6ea6ecb7f3d9b57b94ea6856385c31b19b3dc30e1dd5b124c254",
+      "lines": 24,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "app.core.config",
+        "sqlalchemy",
+        "sqlalchemy.orm"
+      ],
+      "evidence": [
+        {
+          "name": "Base",
+          "line": 16
+        },
+        {
+          "name": "get_db",
+          "line": 19
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/__init__.py",
+      "size": 936,
+      "sha256": "83689d7c20642a626c72e4d4dc3dd0402aa8bd0052a5fd8018236af1824b24d0",
+      "lines": 36,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "app.models.audit",
+        "app.models.client",
+        "app.models.company",
+        "app.models.equipment",
+        "app.models.inventory",
+        "app.models.invoice",
+        "app.models.license",
+        "app.models.notification",
+        "app.models.payment",
+        "app.models.product",
+        "app.models.role",
+        "app.models.service",
+        "app.models.service_item",
+        "app.models.user"
+      ],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/audit.py",
+      "size": 1235,
+      "sha256": "4d9ffd43f68736bccec2e1eba9056cc622b1022a748a82f0d8930602c636fbed",
+      "lines": 22,
+      "status": "verificado (estático)",
+      "module": "F15",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "Audit",
+          "line": 7
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/client.py",
+      "size": 1633,
+      "sha256": "414a6a6e50dbb322c75f2785fcfeba71fb29fd503f50333fc2a47f1525a92118",
+      "lines": 27,
+      "status": "verificado (estático)",
+      "module": "F04",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "Client",
+          "line": 7
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/company.py",
+      "size": 1443,
+      "sha256": "366f8d5189347595458a26ed18fda1435622ae80ff258175da0ca9f6cc5b4c6f",
+      "lines": 22,
+      "status": "verificado (estático)",
+      "module": "F02",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "Company",
+          "line": 7
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/equipment.py",
+      "size": 1472,
+      "sha256": "138559988cd24e7cd3fec1217244247218ef511a485a0707aa2d500202d79a79",
+      "lines": 25,
+      "status": "verificado (estático)",
+      "module": "F05",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "Equipment",
+          "line": 7
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/inventory.py",
+      "size": 1617,
+      "sha256": "962e98a82dddd729c942ecf8e583aaa1e69402005825d679f8c941b1a35e1ba2",
+      "lines": 29,
+      "status": "verificado (estático)",
+      "module": "F08",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "enum",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "MovementType",
+          "line": 8
+        },
+        {
+          "name": "InventoryMovement",
+          "line": 12
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/invoice.py",
+      "size": 3632,
+      "sha256": "e7638f5917e748318f57289318f1f1c100f4b78b12c67aabdddc28206edd30f7",
+      "lines": 69,
+      "status": "verificado (estático)",
+      "module": "F10/F11",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "decimal",
+        "enum",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "InvoiceType",
+          "line": 18
+        },
+        {
+          "name": "InvoiceStatus",
+          "line": 23
+        },
+        {
+          "name": "Invoice",
+          "line": 27
+        },
+        {
+          "name": "InvoiceItem",
+          "line": 57
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/license.py",
+      "size": 2080,
+      "sha256": "7859499912158305b78ab26f7acb9d26c52f52f425b26d5c08d2535ec61dd2e8",
+      "lines": 34,
+      "status": "verificado (estático)",
+      "module": "F12",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "License",
+          "line": 7
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/notification.py",
+      "size": 1380,
+      "sha256": "cbb11abd64d431409c8df9da579be90ea8c43fb31e3fefc3e37522346da8fe67",
+      "lines": 23,
+      "status": "verificado (estático)",
+      "module": "F15",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "Notification",
+          "line": 7
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/payment.py",
+      "size": 1695,
+      "sha256": "7bb41c51d3809b538a773099493c4c38464d0b25bee5647ac66eb8e728f64946",
+      "lines": 36,
+      "status": "verificado (estático)",
+      "module": "F09",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "enum",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "PaymentMethod",
+          "line": 8
+        },
+        {
+          "name": "PaymentStatus",
+          "line": 16
+        },
+        {
+          "name": "Payment",
+          "line": 20
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/product.py",
+      "size": 1561,
+      "sha256": "6ca96946eb42df29136aa2fae050ac3e8481828a7914659a52a7bde02ea8ed49",
+      "lines": 26,
+      "status": "verificado (estático)",
+      "module": "F08",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "Product",
+          "line": 7
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/role.py",
+      "size": 409,
+      "sha256": "a2116dae4703122b970de2d6dda440a5aa5d7b807e58b70a49da9afdc763e678",
+      "lines": 11,
+      "status": "verificado (estático)",
+      "module": "F03",
+      "dependencies": [
+        "app.db.session",
+        "sqlalchemy",
+        "sqlalchemy.orm"
+      ],
+      "evidence": [
+        {
+          "name": "Role",
+          "line": 5
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/service.py",
+      "size": 3354,
+      "sha256": "45c29590563ea0e5c15922661460596d8f45b48bd6f0c8f6072033044b7d39e8",
+      "lines": 56,
+      "status": "verificado (estático)",
+      "module": "F06/F07",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "enum",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "ServiceStatus",
+          "line": 16
+        },
+        {
+          "name": "Service",
+          "line": 25
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/service_item.py",
+      "size": 1296,
+      "sha256": "9679062b4578fade163fe241df47fd48d22197308fd45925bfd795e6f3cf91d8",
+      "lines": 58,
+      "status": "verificado (estático)",
+      "module": "F08",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "sqlalchemy",
+        "sqlalchemy.orm"
+      ],
+      "evidence": [
+        {
+          "name": "ServiceItem",
+          "line": 9
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/models/user.py",
+      "size": 1721,
+      "sha256": "9d6499738b1006f1ee3bd46e116a4ce64e25ad52c555a4fc1a848eba93c2ca63",
+      "lines": 25,
+      "status": "verificado (estático)",
+      "module": "F03",
+      "dependencies": [
+        "app.db.session",
+        "datetime",
+        "sqlalchemy",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "User",
+          "line": 7
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/audit.py",
+      "size": 345,
+      "sha256": "34e11d645531e645637eac4a9dd93e0e85314297ec2f3d8a062f228fe5481a23",
+      "lines": 13,
+      "status": "verificado (estático)",
+      "module": "F15",
+      "dependencies": [
+        "datetime",
+        "pydantic",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "AuditResponse",
+          "line": 5
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/auth.py",
+      "size": 401,
+      "sha256": "b7673c8a0c81e6afbc092e85428256c5361d4586a583e5774746d0a48f201a35",
+      "lines": 17,
+      "status": "verificado (estático)",
+      "module": "F01",
+      "dependencies": [
+        "pydantic",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "Token",
+          "line": 4
+        },
+        {
+          "name": "LoginRequest",
+          "line": 15
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/client.py",
+      "size": 749,
+      "sha256": "a2e7f6d7277c01e184c077ceab62cdd024d1dceebc5f51ce1f0a7c380c62d359",
+      "lines": 29,
+      "status": "verificado (estático)",
+      "module": "F04",
+      "dependencies": [
+        "datetime",
+        "pydantic",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "ClientBase",
+          "line": 5
+        },
+        {
+          "name": "ClientCreate",
+          "line": 13
+        },
+        {
+          "name": "ClientUpdate",
+          "line": 16
+        },
+        {
+          "name": "ClientResponse",
+          "line": 25
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/company.py",
+      "size": 1382,
+      "sha256": "72e25bb7065d7fca721123852340118a9cd1d09d7fba83dfb18c26e5835d4fb4",
+      "lines": 48,
+      "status": "verificado (estático)",
+      "module": "F02",
+      "dependencies": [
+        "datetime",
+        "pydantic",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "CompanyBase",
+          "line": 5
+        },
+        {
+          "name": "CompanyCreate",
+          "line": 14
+        },
+        {
+          "name": "CompanyUpdate",
+          "line": 17
+        },
+        {
+          "name": "CompanyResponse",
+          "line": 27
+        },
+        {
+          "name": "CompanyWithAdminCreate",
+          "line": 37
+        },
+        {
+          "name": "Config",
+          "line": 34
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/dashboard.py",
+      "size": 232,
+      "sha256": "5bdad69ca0c94d8396cb6cefa7285709926e2f0bb8044e4ac970052d9b61a0e6",
+      "lines": 9,
+      "status": "verificado (estático)",
+      "module": "F14",
+      "dependencies": [
+        "pydantic"
+      ],
+      "evidence": [
+        {
+          "name": "DashboardStats",
+          "line": 3
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/equipment.py",
+      "size": 490,
+      "sha256": "f922399af4f807197e58a9985b001c477345530e67624f6d0eee95d76264342b",
+      "lines": 20,
+      "status": "verificado (estático)",
+      "module": "F05",
+      "dependencies": [
+        "datetime",
+        "pydantic",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "EquipmentBase",
+          "line": 5
+        },
+        {
+          "name": "EquipmentCreate",
+          "line": 14
+        },
+        {
+          "name": "EquipmentResponse",
+          "line": 17
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/inventory.py",
+      "size": 576,
+      "sha256": "0f15448fc902bfbfb44a02ae8efeec0962fdae53a984e9841f0fa4da9c5849c8",
+      "lines": 21,
+      "status": "verificado (estático)",
+      "module": "F08",
+      "dependencies": [
+        "app.models.inventory",
+        "datetime",
+        "pydantic",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "InventoryMovementCreate",
+          "line": 6
+        },
+        {
+          "name": "InventoryMovementResponse",
+          "line": 12
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/invoice.py",
+      "size": 1739,
+      "sha256": "2d76f53be03d36937818fff878946587992d40ed677a18353fcafca194b8a2b1",
+      "lines": 72,
+      "status": "verificado (estático)",
+      "module": "F10/F11",
+      "dependencies": [
+        "app.models.invoice",
+        "datetime",
+        "decimal",
+        "pydantic",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "InvoiceItemCreate",
+          "line": 10
+        },
+        {
+          "name": "InvoiceItemResponse",
+          "line": 17
+        },
+        {
+          "name": "InvoiceCreate",
+          "line": 29
+        },
+        {
+          "name": "InvoiceResponse",
+          "line": 36
+        },
+        {
+          "name": "InvoiceListResponse",
+          "line": 58
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/license.py",
+      "size": 2199,
+      "sha256": "2bde32f9e2f951f553c4cd6a69713f0df6d0b7070b87ef835257eefb883f8729",
+      "lines": 57,
+      "status": "verificado (estático)",
+      "module": "F12",
+      "dependencies": [
+        "datetime",
+        "pydantic",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "LicenseBase",
+          "line": 5
+        },
+        {
+          "name": "LicenseCreate",
+          "line": 18
+        },
+        {
+          "name": "LicenseUpdate",
+          "line": 34
+        },
+        {
+          "name": "LicenseResponse",
+          "line": 47
+        },
+        {
+          "name": "validate_antivirus_and_dates",
+          "line": 20
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/notification.py",
+      "size": 365,
+      "sha256": "4b770eddb4017b3387afe91c2737ff8703606cb4aaa58fd0d056c73628eec85a",
+      "lines": 16,
+      "status": "verificado (estático)",
+      "module": "F15",
+      "dependencies": [
+        "datetime",
+        "pydantic"
+      ],
+      "evidence": [
+        {
+          "name": "NotificationSendRequest",
+          "line": 4
+        },
+        {
+          "name": "NotificationResponse",
+          "line": 8
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/payment.py",
+      "size": 824,
+      "sha256": "a913f696b6b6c6c4c98263f925b385ad80b96926ef58a8bb239e5a505ae2ae66",
+      "lines": 38,
+      "status": "verificado (estático)",
+      "module": "F09",
+      "dependencies": [
+        "app.models.payment",
+        "datetime",
+        "pydantic"
+      ],
+      "evidence": [
+        {
+          "name": "PaymentCreate",
+          "line": 8
+        },
+        {
+          "name": "PaymentResponse",
+          "line": 14
+        },
+        {
+          "name": "PaymentFinancialSummary",
+          "line": 26
+        },
+        {
+          "name": "PaymentListResponse",
+          "line": 36
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/product.py",
+      "size": 782,
+      "sha256": "d3b35d03e867d609237db166bdf61d13f553f6415bbc6524a877ade74e078351",
+      "lines": 31,
+      "status": "verificado (estático)",
+      "module": "F08",
+      "dependencies": [
+        "datetime",
+        "pydantic",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "ProductBase",
+          "line": 5
+        },
+        {
+          "name": "ProductCreate",
+          "line": 14
+        },
+        {
+          "name": "ProductUpdate",
+          "line": 17
+        },
+        {
+          "name": "ProductResponse",
+          "line": 27
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/service.py",
+      "size": 1259,
+      "sha256": "ac685d62a3ddbe5a23ffc27689439b120d3c13ed35031c71b0beeeb021326768",
+      "lines": 49,
+      "status": "verificado (estático)",
+      "module": "F06/F07",
+      "dependencies": [
+        "app.models.service",
+        "app.schemas.service_item",
+        "datetime",
+        "pydantic",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "ServiceBase",
+          "line": 10
+        },
+        {
+          "name": "ServiceCreate",
+          "line": 19
+        },
+        {
+          "name": "ServiceUpdateStatus",
+          "line": 24
+        },
+        {
+          "name": "AddProductToService",
+          "line": 31
+        },
+        {
+          "name": "ServiceResponse",
+          "line": 36
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/service_item.py",
+      "size": 386,
+      "sha256": "7d6a82f0d083cd591e193749bc09f5f838516295d206b4b402f4538ab5174e3a",
+      "lines": 19,
+      "status": "verificado (estático)",
+      "module": "F08",
+      "dependencies": [
+        "datetime",
+        "pydantic"
+      ],
+      "evidence": [
+        {
+          "name": "ServiceItemCreate",
+          "line": 5
+        },
+        {
+          "name": "ServiceItemResponse",
+          "line": 10
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/schemas/user.py",
+      "size": 883,
+      "sha256": "d1a1213c728edc25ab6641e17ec6a6f09069f671b24c9b5a464256590a54693e",
+      "lines": 34,
+      "status": "verificado (estático)",
+      "module": "F03",
+      "dependencies": [
+        "datetime",
+        "pydantic",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "RoleSchema",
+          "line": 5
+        },
+        {
+          "name": "UserBase",
+          "line": 10
+        },
+        {
+          "name": "UserCreate",
+          "line": 16
+        },
+        {
+          "name": "UserUpdate",
+          "line": 20
+        },
+        {
+          "name": "UserResponse",
+          "line": 28
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/services/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/services/audit_service.py",
+      "size": 533,
+      "sha256": "2f5f9683eb53c64781eeeb3869e24f18ddd436efe4a15bf3622e991dfb788d80",
+      "lines": 23,
+      "status": "verificado (estático)",
+      "module": "F15",
+      "dependencies": [
+        "app.models.audit",
+        "sqlalchemy.orm",
+        "typing"
+      ],
+      "evidence": [
+        {
+          "name": "log_audit",
+          "line": 5
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/services/inventory_service.py",
+      "size": 1649,
+      "sha256": "15ef65dea0b4247238d963c9153033c53dfdac5e18b2656b2c98797795c8745a",
+      "lines": 49,
+      "status": "verificado (estático)",
+      "module": "F08",
+      "dependencies": [
+        "app.models.inventory",
+        "app.models.product",
+        "app.services.audit_service",
+        "fastapi",
+        "sqlalchemy.orm"
+      ],
+      "evidence": [
+        {
+          "name": "discount_inventory_for_service",
+          "line": 7
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/app/services/notification_service.py",
+      "size": 938,
+      "sha256": "5f83eec66cfc45528d337ac8e008dc86d5a52ae10858d5e054b68b429966227a",
+      "lines": 26,
+      "status": "verificado (estático)",
+      "module": "F15",
+      "dependencies": [
+        "app.models.notification",
+        "app.services.audit_service",
+        "sqlalchemy.orm"
+      ],
+      "evidence": [
+        {
+          "name": "NotificationService",
+          "line": 5
+        },
+        {
+          "name": "send_internal_notification",
+          "line": 7
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "backend/static/uploads/95431c21f4df499bbd689e8789694e93.jpg",
+      "kind": "binary",
+      "size": 111155,
+      "status": "documentado (inventario, contenido excluido)",
+      "module": "F17",
+      "pending": "U09; no necesario para reconstrucción del código",
+      "dependencies": []
+    },
+    {
+      "path": "backend/static/uploads/qr_3975c2a899954ad29f076818703f00d1_1a63c7e7.jpg",
+      "kind": "binary",
+      "size": 15,
+      "status": "documentado (inventario, contenido excluido)",
+      "module": "F17",
+      "pending": "U09; no necesario para reconstrucción del código",
+      "dependencies": []
+    },
+    {
+      "path": "backend/tests/test_main.py",
+      "size": 598,
+      "sha256": "19e0d9d02e88ebe9d2ad12dcf3ff49f52257d7f2a98cdb7a504e3b472903f6fe",
+      "lines": 22,
+      "status": "verificado (estático)",
+      "module": "F17-T",
+      "dependencies": [
+        "app.main",
+        "fastapi.testclient",
+        "pytest"
+      ],
+      "evidence": [
+        {
+          "name": "test_login_success",
+          "line": 7
+        },
+        {
+          "name": "test_login_failure",
+          "line": 17
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "database/init.sql",
+      "size": 91,
+      "sha256": "e1a869cd6b4e30aa76c6cdafb4eff82904e518e71a8d76ccc01f5f0503ea5ddd",
+      "lines": 2,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/Dockerfile",
+      "size": 167,
+      "sha256": "c2dca394e1889c7af9330369e50f185fc6a892a0d8a1b1b72483dedd6566e80a",
+      "lines": 12,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/index.html",
+      "size": 296,
+      "sha256": "52fbc1dc26f4cdd945e00e6603c67d2e90fc01cfb39c0ab978a989e94a3acd48",
+      "lines": 12,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "size": 99794,
+      "sha256": "6188b46602696b00351bd10bcce0d86db2233b12efa5af894f5801aaa2e2f4a6",
+      "lines": 2967,
+      "status": "verificado (estático)",
+      "module": "X01",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/package.json",
+      "size": 528,
+      "sha256": "93da3675cc7b989c75ae5d836666cc5702d18588427bb9dd0d089918bc8f4b60",
+      "lines": 25,
+      "status": "verificado (estático)",
+      "module": "X01",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/postcss.config.cjs",
+      "size": 82,
+      "sha256": "b7cdd644c868bd3b40f3e81bbf7875357f490ae0b4e20390495f95bd095760ef",
+      "lines": 6,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/tailwind.config.cjs",
+      "size": 340,
+      "sha256": "25d13b6c2da464b3a967ae612b7b9b8ac2dca3b2ad2459ef075f7edd34b8df32",
+      "lines": 20,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/vite.config.js",
+      "size": 222,
+      "sha256": "0c8ecc2500e1620aa0ae194502827166a5b2ebfd01a34d2570aa5276c9e32cb7",
+      "lines": 13,
+      "status": "verificado (estático)",
+      "module": "F17",
+      "dependencies": [
+        "@vitejs/plugin-react",
+        "vite"
+      ],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/App.jsx",
+      "size": 8639,
+      "sha256": "f1bd20c88700be06fab721dab70084bb701dac2fdbd2ab51aec73e5016f01719",
+      "lines": 349,
+      "status": "verificado (estático)",
+      "module": "F16",
+      "dependencies": [
+        "./components/Layout",
+        "./context/AuthContext",
+        "./pages/Audit",
+        "./pages/Clients",
+        "./pages/Dashboard",
+        "./pages/Equipment",
+        "./pages/Inventory",
+        "./pages/Invoices",
+        "./pages/Licenses",
+        "./pages/Login",
+        "./pages/MobileCameraUpload",
+        "./pages/Payments",
+        "./pages/ServiceDetail",
+        "./pages/Services",
+        "./pages/Superadmin",
+        "./pages/Users",
+        "./utils/permissions",
+        "react",
+        "react-router-dom"
+      ],
+      "evidence": [
+        {
+          "name": "getRole",
+          "line": 35
+        },
+        {
+          "name": "ProtectedRoute",
+          "line": 48
+        },
+        {
+          "name": "role",
+          "line": 70
+        },
+        {
+          "name": "App",
+          "line": 85
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/index.css",
+      "size": 936,
+      "sha256": "5fa538cf3d7a43974ed1bff97f257ec54b53df15a29da698ed0cc959bf6ee761",
+      "lines": 71,
+      "status": "verificado (estático)",
+      "module": "F16",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/main.jsx",
+      "size": 234,
+      "sha256": "ce7d01c9692f8fb2c901f767ff1d3fc3b663f374e9cfbe8396d9bee6e0054d76",
+      "lines": 10,
+      "status": "verificado (estático)",
+      "module": "F16",
+      "dependencies": [
+        "./App",
+        "./index.css",
+        "react",
+        "react-dom/client"
+      ],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/components/ImageUploadControl.jsx",
+      "size": 10521,
+      "sha256": "6d858207e3aa0369ab3cb54e22c46a9e2235fa89d3f67a211d5d58fce1549d74",
+      "lines": 276,
+      "status": "verificado (estático)",
+      "module": "F13",
+      "dependencies": [
+        "../services/api",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "ImageUploadControl",
+          "line": 17
+        },
+        {
+          "name": "fileInputRef",
+          "line": 18
+        },
+        {
+          "name": "handleFileSelect",
+          "line": 27
+        },
+        {
+          "name": "file",
+          "line": 28
+        },
+        {
+          "name": "formData",
+          "line": 38
+        },
+        {
+          "name": "res",
+          "line": 41
+        },
+        {
+          "name": "handleOpenQrModal",
+          "line": 55
+        },
+        {
+          "name": "res",
+          "line": 58
+        },
+        {
+          "name": "sid",
+          "line": 59
+        },
+        {
+          "name": "hostname",
+          "line": 64
+        },
+        {
+          "name": "port",
+          "line": 65
+        },
+        {
+          "name": "mobileAppUrl",
+          "line": 66
+        },
+        {
+          "name": "interval",
+          "line": 80
+        },
+        {
+          "name": "res",
+          "line": 85
+        },
+        {
+          "name": "qrCodeImageApi",
+          "line": 105
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/components/Layout.jsx",
+      "size": 725,
+      "sha256": "bddf016df5829ded10e0ede418e0aa0e944d49214ddd88754434b52c5f586931",
+      "lines": 32,
+      "status": "verificado (estático)",
+      "module": "F16",
+      "dependencies": [
+        "./Navbar",
+        "./Sidebar",
+        "react",
+        "react-router-dom"
+      ],
+      "evidence": [
+        {
+          "name": "Layout",
+          "line": 6
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/components/Modal.jsx",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "status": "verificado (estático)",
+      "module": "F16",
+      "dependencies": [],
+      "evidence": [],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/components/Navbar.jsx",
+      "size": 3059,
+      "sha256": "ab92fd6350f47512dfe911a743af5ac4324126eb5df3326873b76c546e42b7d8",
+      "lines": 84,
+      "status": "verificado (estático)",
+      "module": "F16",
+      "dependencies": [
+        "../context/AuthContext",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "Navbar",
+          "line": 13
+        },
+        {
+          "name": "roleName",
+          "line": 16
+        },
+        {
+          "name": "displayName",
+          "line": 17
+        },
+        {
+          "name": "initials",
+          "line": 18
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/components/ProtectedRoute.jsx",
+      "size": 5626,
+      "sha256": "d81f5da1c0537595b809c7865ac68f55192b660f7839f1d1ca3863644449ec4f",
+      "lines": 262,
+      "status": "verificado (estático)",
+      "module": "F16",
+      "dependencies": [
+        "../context/AuthContext",
+        "../services/api",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "Dashboard",
+          "line": 17
+        },
+        {
+          "name": "role",
+          "line": 25
+        },
+        {
+          "name": "nombre",
+          "line": 36
+        },
+        {
+          "name": "cargarDashboard",
+          "line": 44
+        },
+        {
+          "name": "response",
+          "line": 46
+        },
+        {
+          "name": "stats",
+          "line": 76
+        },
+        {
+          "name": "Icon",
+          "line": 141
+        },
+        {
+          "name": "Card",
+          "line": 238
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/components/Sidebar.jsx",
+      "size": 11504,
+      "sha256": "827400e63aabcf7e7309144bf9b23bf0fa394c78e80b3d7338feeadd1e59cc11",
+      "lines": 459,
+      "status": "verificado (estático)",
+      "module": "F16",
+      "dependencies": [
+        "../context/AuthContext",
+        "../utils/permissions",
+        "lucide-react",
+        "react",
+        "react-router-dom"
+      ],
+      "evidence": [
+        {
+          "name": "menu",
+          "line": 26
+        },
+        {
+          "name": "getRoleName",
+          "line": 145
+        },
+        {
+          "name": "Sidebar",
+          "line": 149
+        },
+        {
+          "name": "role",
+          "line": 152
+        },
+        {
+          "name": "visibleSections",
+          "line": 154
+        },
+        {
+          "name": "userName",
+          "line": 173
+        },
+        {
+          "name": "Icon",
+          "line": 306
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/context/AuthContext.jsx",
+      "size": 1830,
+      "sha256": "8a1ece39042f772e1427781942bc061dd132aadd699bf9042c80748268418e82",
+      "lines": 96,
+      "status": "verificado (estático)",
+      "module": "F01",
+      "dependencies": [
+        "../services/api",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "AuthContext",
+          "line": 11
+        },
+        {
+          "name": "AuthProvider",
+          "line": 13
+        },
+        {
+          "name": "saved",
+          "line": 16
+        },
+        {
+          "name": "login",
+          "line": 25
+        },
+        {
+          "name": "res",
+          "line": 29
+        },
+        {
+          "name": "userData",
+          "line": 34
+        },
+        {
+          "name": "logout",
+          "line": 47
+        },
+        {
+          "name": "hasRole",
+          "line": 53
+        },
+        {
+          "name": "isAuthenticated",
+          "line": 63
+        },
+        {
+          "name": "token",
+          "line": 68
+        },
+        {
+          "name": "useAuth",
+          "line": 93
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Audit.jsx",
+      "size": 11547,
+      "sha256": "438ece78aa8ff5d8da242f00d2843b696598661d4b38bf589a18a1e6f9bba2ff",
+      "lines": 394,
+      "status": "verificado (estático)",
+      "module": "F15",
+      "dependencies": [
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "initialLogs",
+          "line": 14
+        },
+        {
+          "name": "ActionIcon",
+          "line": 67
+        },
+        {
+          "name": "actionStyles",
+          "line": 87
+        },
+        {
+          "name": "actionBadge",
+          "line": 106
+        },
+        {
+          "name": "Audit",
+          "line": 125
+        },
+        {
+          "name": "filteredLogs",
+          "line": 129
+        },
+        {
+          "name": "value",
+          "line": 130
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Clients.jsx",
+      "size": 35156,
+      "sha256": "e08f5218e5f7c92902e0ed3782dafb12b16fef92f306528e43b6cdc58effb9f4",
+      "lines": 991,
+      "status": "verificado (estático)",
+      "module": "F04",
+      "dependencies": [
+        "../context/AuthContext",
+        "../services/api",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "emptyForm",
+          "line": 22
+        },
+        {
+          "name": "getInitials",
+          "line": 32
+        },
+        {
+          "name": "first",
+          "line": 33
+        },
+        {
+          "name": "second",
+          "line": 34
+        },
+        {
+          "name": "getErrorMessage",
+          "line": 39
+        },
+        {
+          "name": "Clients",
+          "line": 55
+        },
+        {
+          "name": "role",
+          "line": 58
+        },
+        {
+          "name": "canCreate",
+          "line": 60
+        },
+        {
+          "name": "canEdit",
+          "line": 61
+        },
+        {
+          "name": "loadClients",
+          "line": 83
+        },
+        {
+          "name": "response",
+          "line": 88
+        },
+        {
+          "name": "activeClients",
+          "line": 106
+        },
+        {
+          "name": "inactiveClients",
+          "line": 110
+        },
+        {
+          "name": "filteredClients",
+          "line": 118
+        },
+        {
+          "name": "value",
+          "line": 119
+        },
+        {
+          "name": "fullName",
+          "line": 126
+        },
+        {
+          "name": "handleChange",
+          "line": 142
+        },
+        {
+          "name": "openCreateModal",
+          "line": 151
+        },
+        {
+          "name": "openEditModal",
+          "line": 159
+        },
+        {
+          "name": "closeModal",
+          "line": 177
+        },
+        {
+          "name": "validateForm",
+          "line": 190
+        },
+        {
+          "name": "emailRegex",
+          "line": 208
+        },
+        {
+          "name": "handleSubmit",
+          "line": 221
+        },
+        {
+          "name": "validationError",
+          "line": 224
+        },
+        {
+          "name": "payload",
+          "line": 234
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Dashboard.jsx",
+      "size": 4650,
+      "sha256": "a7a1d830d15f8845d0868ca4affc60510e2641467e4de7baa9a2d3423b730b47",
+      "lines": 142,
+      "status": "verificado (estático)",
+      "module": "F14",
+      "dependencies": [
+        "../context/AuthContext",
+        "../services/api",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "Dashboard",
+          "line": 15
+        },
+        {
+          "name": "role",
+          "line": 22
+        },
+        {
+          "name": "nombre",
+          "line": 23
+        },
+        {
+          "name": "cargarDashboard",
+          "line": 26
+        },
+        {
+          "name": "response",
+          "line": 28
+        },
+        {
+          "name": "Card",
+          "line": 132
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Equipment.jsx",
+      "size": 33255,
+      "sha256": "240b77b3071c78ce19510d16f7336887ac6dc1ef4a6948db918515669f8f67cc",
+      "lines": 972,
+      "status": "verificado (estático)",
+      "module": "F05",
+      "dependencies": [
+        "../components/ImageUploadControl",
+        "../services/api",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "emptyForm",
+          "line": 23
+        },
+        {
+          "name": "EquipmentIcon",
+          "line": 33
+        },
+        {
+          "name": "value",
+          "line": 34
+        },
+        {
+          "name": "size",
+          "line": 50
+        },
+        {
+          "name": "getClientName",
+          "line": 64
+        },
+        {
+          "name": "getInitials",
+          "line": 70
+        },
+        {
+          "name": "getErrorMessage",
+          "line": 82
+        },
+        {
+          "name": "detail",
+          "line": 83
+        },
+        {
+          "name": "formatDate",
+          "line": 106
+        },
+        {
+          "name": "parsedDate",
+          "line": 109
+        },
+        {
+          "name": "Equipment",
+          "line": 122
+        },
+        {
+          "name": "loadEquipment",
+          "line": 141
+        },
+        {
+          "name": "response",
+          "line": 146
+        },
+        {
+          "name": "loadClients",
+          "line": 156
+        },
+        {
+          "name": "response",
+          "line": 161
+        },
+        {
+          "name": "clientsById",
+          "line": 176
+        },
+        {
+          "name": "map",
+          "line": 177
+        },
+        {
+          "name": "equipmentWithClient",
+          "line": 186
+        },
+        {
+          "name": "filteredEquipment",
+          "line": 193
+        },
+        {
+          "name": "value",
+          "line": 194
+        },
+        {
+          "name": "clientName",
+          "line": 201
+        },
+        {
+          "name": "clientCount",
+          "line": 219
+        },
+        {
+          "name": "typeCount",
+          "line": 223
+        },
+        {
+          "name": "openModal",
+          "line": 232
+        },
+        {
+          "name": "closeModal",
+          "line": 238
+        },
+        {
+          "name": "handleChange",
+          "line": 246
+        },
+        {
+          "name": "validateForm",
+          "line": 259
+        },
+        {
+          "name": "handleSubmit",
+          "line": 279
+        },
+        {
+          "name": "validationError",
+          "line": 282
+        },
+        {
+          "name": "payload",
+          "line": 293
+        },
+        {
+          "name": "clientName",
+          "line": 511
+        },
+        {
+          "name": "clientName",
+          "line": 624
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Inventory.jsx",
+      "size": 30868,
+      "sha256": "3060c35cffd9535034573a6359d2d922d1e6c60194b7b41fea89e02f286ae6c4",
+      "lines": 897,
+      "status": "verificado (estático)",
+      "module": "F08",
+      "dependencies": [
+        "../context/AuthContext",
+        "../services/api",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "EMPTY_FORM",
+          "line": 18
+        },
+        {
+          "name": "StockBadge",
+          "line": 28
+        },
+        {
+          "name": "getErrorMessage",
+          "line": 55
+        },
+        {
+          "name": "detail",
+          "line": 56
+        },
+        {
+          "name": "Inventory",
+          "line": 83
+        },
+        {
+          "name": "isAdmin",
+          "line": 100
+        },
+        {
+          "name": "loadProducts",
+          "line": 105
+        },
+        {
+          "name": "response",
+          "line": 110
+        },
+        {
+          "name": "filteredProducts",
+          "line": 125
+        },
+        {
+          "name": "value",
+          "line": 126
+        },
+        {
+          "name": "lowStock",
+          "line": 141
+        },
+        {
+          "name": "outOfStock",
+          "line": 149
+        },
+        {
+          "name": "totalUnits",
+          "line": 153
+        },
+        {
+          "name": "openModal",
+          "line": 160
+        },
+        {
+          "name": "closeModal",
+          "line": 166
+        },
+        {
+          "name": "handleChange",
+          "line": 174
+        },
+        {
+          "name": "handleSubmit",
+          "line": 187
+        },
+        {
+          "name": "nombre",
+          "line": 195
+        },
+        {
+          "name": "categoria",
+          "line": 196
+        },
+        {
+          "name": "codigo",
+          "line": 197
+        },
+        {
+          "name": "stock",
+          "line": 199
+        },
+        {
+          "name": "stockMinimo",
+          "line": 200
+        },
+        {
+          "name": "precioCompra",
+          "line": 201
+        },
+        {
+          "name": "precioVenta",
+          "line": 202
+        },
+        {
+          "name": "payload",
+          "line": 245
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Invoices.jsx",
+      "size": 24705,
+      "sha256": "e638ebefaf225051bd03e3604e65295273831d20cd94d7ed21eb9254b4bf8105",
+      "lines": 750,
+      "status": "verificado (estático)",
+      "module": "F10/F11",
+      "dependencies": [
+        "../context/AuthContext",
+        "../services/api",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "invoiceTypeLabels",
+          "line": 21
+        },
+        {
+          "name": "statusStyles",
+          "line": 27
+        },
+        {
+          "name": "formatMoney",
+          "line": 32
+        },
+        {
+          "name": "number",
+          "line": 33
+        },
+        {
+          "name": "formatDate",
+          "line": 42
+        },
+        {
+          "name": "StatusBadge",
+          "line": 51
+        },
+        {
+          "name": "DetailModal",
+          "line": 64
+        },
+        {
+          "name": "Invoices",
+          "line": 291
+        },
+        {
+          "name": "role",
+          "line": 294
+        },
+        {
+          "name": "canCancel",
+          "line": 295
+        },
+        {
+          "name": "loadInvoices",
+          "line": 306
+        },
+        {
+          "name": "response",
+          "line": 311
+        },
+        {
+          "name": "openInvoice",
+          "line": 329
+        },
+        {
+          "name": "response",
+          "line": 333
+        },
+        {
+          "name": "handleDownloadPdf",
+          "line": 347
+        },
+        {
+          "name": "response",
+          "line": 352
+        },
+        {
+          "name": "blob",
+          "line": 359
+        },
+        {
+          "name": "url",
+          "line": 363
+        },
+        {
+          "name": "link",
+          "line": 365
+        },
+        {
+          "name": "type",
+          "line": 368
+        },
+        {
+          "name": "safeType",
+          "line": 372
+        },
+        {
+          "name": "handleCancel",
+          "line": 396
+        },
+        {
+          "name": "confirmed",
+          "line": 397
+        },
+        {
+          "name": "filteredInvoices",
+          "line": 424
+        },
+        {
+          "name": "term",
+          "line": 425
+        },
+        {
+          "name": "matchesStatus",
+          "line": 428
+        },
+        {
+          "name": "searchable",
+          "line": 432
+        },
+        {
+          "name": "stats",
+          "line": 450
+        },
+        {
+          "name": "emitidos",
+          "line": 451
+        },
+        {
+          "name": "anulados",
+          "line": 455
+        },
+        {
+          "name": "totalEmitido",
+          "line": 459
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Licenses.jsx",
+      "size": 31065,
+      "sha256": "31616d16900a53b2380cd4321b256df9c59dc18c40f402920804a22dfaecf12e",
+      "lines": 730,
+      "status": "verificado (estático)",
+      "module": "F12",
+      "dependencies": [
+        "../services/api",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "Licenses",
+          "line": 26
+        },
+        {
+          "name": "fetchData",
+          "line": 53
+        },
+        {
+          "name": "handleCopyKey",
+          "line": 75
+        },
+        {
+          "name": "handleCategoryChange",
+          "line": 81
+        },
+        {
+          "name": "isAnti",
+          "line": 83
+        },
+        {
+          "name": "handleInputChange",
+          "line": 92
+        },
+        {
+          "name": "openCreateModal",
+          "line": 100
+        },
+        {
+          "name": "openEditModal",
+          "line": 119
+        },
+        {
+          "name": "handleSubmit",
+          "line": 138
+        },
+        {
+          "name": "payload",
+          "line": 164
+        },
+        {
+          "name": "handleDelete",
+          "line": 188
+        },
+        {
+          "name": "filteredLicenses",
+          "line": 198
+        },
+        {
+          "name": "matchCategory",
+          "line": 200
+        },
+        {
+          "name": "q",
+          "line": 202
+        },
+        {
+          "name": "matchSearch",
+          "line": 203
+        },
+        {
+          "name": "totalLicencias",
+          "line": 214
+        },
+        {
+          "name": "antivirusActivos",
+          "line": 215
+        },
+        {
+          "name": "porVencer",
+          "line": 218
+        },
+        {
+          "name": "vencidas",
+          "line": 221
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Login.jsx",
+      "size": 18988,
+      "sha256": "52d13bcc0b262a4b3d4716a13a310ba8bf3f6df8134963244ba222a1e046e4df",
+      "lines": 434,
+      "status": "verificado (estático)",
+      "module": "F01",
+      "dependencies": [
+        "../context/AuthContext",
+        "lucide-react",
+        "react",
+        "react-router-dom"
+      ],
+      "evidence": [
+        {
+          "name": "CAROUSEL_SLIDES",
+          "line": 25
+        },
+        {
+          "name": "getErrorMessage",
+          "line": 58
+        },
+        {
+          "name": "detail",
+          "line": 59
+        },
+        {
+          "name": "messages",
+          "line": 62
+        },
+        {
+          "name": "Login",
+          "line": 72
+        },
+        {
+          "name": "navigate",
+          "line": 74
+        },
+        {
+          "name": "timer",
+          "line": 89
+        },
+        {
+          "name": "handleSubmit",
+          "line": 102
+        },
+        {
+          "name": "userData",
+          "line": 110
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/MobileCameraUpload.jsx",
+      "size": 8057,
+      "sha256": "20b0fd6d48efb6b9c66b733edcad4889ff1d52a62db238d8b1161ad2593ff8b3",
+      "lines": 194,
+      "status": "verificado (estático)",
+      "module": "F13",
+      "dependencies": [
+        "../services/api",
+        "lucide-react",
+        "react",
+        "react-router-dom"
+      ],
+      "evidence": [
+        {
+          "name": "MobileCameraUpload",
+          "line": 6
+        },
+        {
+          "name": "fileInputRef",
+          "line": 8
+        },
+        {
+          "name": "handleFileChange",
+          "line": 16
+        },
+        {
+          "name": "file",
+          "line": 17
+        },
+        {
+          "name": "reader",
+          "line": 28
+        },
+        {
+          "name": "handleUpload",
+          "line": 35
+        },
+        {
+          "name": "formData",
+          "line": 42
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Payments.jsx",
+      "size": 39664,
+      "sha256": "a07accd69a9dd63c95caf4189697b9f7781fbadd6467f08ac10cca9dd09676f6",
+      "lines": 1512,
+      "status": "verificado (estático)",
+      "module": "F09",
+      "dependencies": [
+        "../context/AuthContext",
+        "../services/api",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "PAYMENT_METHODS",
+          "line": 20
+        },
+        {
+          "name": "formatCurrency",
+          "line": 30
+        },
+        {
+          "name": "formatDate",
+          "line": 38
+        },
+        {
+          "name": "date",
+          "line": 41
+        },
+        {
+          "name": "getServiceTotal",
+          "line": 54
+        },
+        {
+          "name": "labor",
+          "line": 55
+        },
+        {
+          "name": "products",
+          "line": 57
+        },
+        {
+          "name": "getStatusConfig",
+          "line": 68
+        },
+        {
+          "name": "getPaymentStatusConfig",
+          "line": 97
+        },
+        {
+          "name": "Payments",
+          "line": 114
+        },
+        {
+          "name": "canRegisterPayments",
+          "line": 140
+        },
+        {
+          "name": "canCancelPayments",
+          "line": 143
+        },
+        {
+          "name": "loadData",
+          "line": 147
+        },
+        {
+          "name": "clientMap",
+          "line": 200
+        },
+        {
+          "name": "map",
+          "line": 201
+        },
+        {
+          "name": "paymentTotals",
+          "line": 211
+        },
+        {
+          "name": "totals",
+          "line": 212
+        },
+        {
+          "name": "serviceId",
+          "line": 215
+        },
+        {
+          "name": "serviceRows",
+          "line": 233
+        },
+        {
+          "name": "total",
+          "line": 235
+        },
+        {
+          "name": "paid",
+          "line": 237
+        },
+        {
+          "name": "balance",
+          "line": 241
+        },
+        {
+          "name": "financialStatus",
+          "line": 243
+        },
+        {
+          "name": "filteredServices",
+          "line": 262
+        },
+        {
+          "name": "normalizedSearch",
+          "line": 263
+        },
+        {
+          "name": "client",
+          "line": 272
+        },
+        {
+          "name": "clientText",
+          "line": 276
+        },
+        {
+          "name": "serviceText",
+          "line": 285
+        },
+        {
+          "name": "metrics",
+          "line": 300
+        },
+        {
+          "name": "total",
+          "line": 301
+        },
+        {
+          "name": "paid",
+          "line": 306
+        },
+        {
+          "name": "balance",
+          "line": 311
+        },
+        {
+          "name": "paidServices",
+          "line": 316
+        },
+        {
+          "name": "partialServices",
+          "line": 320
+        },
+        {
+          "name": "pendingServices",
+          "line": 324
+        },
+        {
+          "name": "availableServices",
+          "line": 339
+        },
+        {
+          "name": "selectedService",
+          "line": 348
+        },
+        {
+          "name": "selectedClient",
+          "line": 358
+        },
+        {
+          "name": "openPaymentModal",
+          "line": 363
+        },
+        {
+          "name": "closePaymentModal",
+          "line": 373
+        },
+        {
+          "name": "handleServiceChange",
+          "line": 383
+        },
+        {
+          "name": "value",
+          "line": 384
+        },
+        {
+          "name": "handleAmountChange",
+          "line": 393
+        },
+        {
+          "name": "value",
+          "line": 394
+        },
+        {
+          "name": "numericValue",
+          "line": 401
+        },
+        {
+          "name": "handleRegisterPayment",
+          "line": 416
+        },
+        {
+          "name": "numericAmount",
+          "line": 424
+        },
+        {
+          "name": "handleCancelPayment",
+          "line": 472
+        },
+        {
+          "name": "confirmed",
+          "line": 473
+        },
+        {
+          "name": "getClientName",
+          "line": 503
+        },
+        {
+          "name": "client",
+          "line": 504
+        },
+        {
+          "name": "getPaymentMethodLabel",
+          "line": 521
+        },
+        {
+          "name": "getServicePayments",
+          "line": 531
+        },
+        {
+          "name": "statusConfig",
+          "line": 754
+        },
+        {
+          "name": "StatusIcon",
+          "line": 759
+        },
+        {
+          "name": "servicePayments",
+          "line": 762
+        },
+        {
+          "name": "status",
+          "line": 988
+        },
+        {
+          "name": "MetricCard",
+          "line": 1388
+        },
+        {
+          "name": "TableHeader",
+          "line": 1427
+        },
+        {
+          "name": "LoadingTable",
+          "line": 1445
+        },
+        {
+          "name": "EmptyState",
+          "line": 1472
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Products.jsx",
+      "size": 33762,
+      "sha256": "f59dc7913bcfc53968b9ea1011bbf4e9af70aee25744c68b1c47aa9e8a06db86",
+      "lines": 1014,
+      "status": "verificado (estático)",
+      "module": "F08",
+      "dependencies": [
+        "../context/AuthContext",
+        "../services/api",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "emptyForm",
+          "line": 19
+        },
+        {
+          "name": "getErrorMessage",
+          "line": 29
+        },
+        {
+          "name": "detail",
+          "line": 30
+        },
+        {
+          "name": "formatCurrency",
+          "line": 53
+        },
+        {
+          "name": "number",
+          "line": 54
+        },
+        {
+          "name": "getStockStatus",
+          "line": 63
+        },
+        {
+          "name": "stock",
+          "line": 64
+        },
+        {
+          "name": "minimum",
+          "line": 65
+        },
+        {
+          "name": "Products",
+          "line": 87
+        },
+        {
+          "name": "role",
+          "line": 104
+        },
+        {
+          "name": "canCreate",
+          "line": 105
+        },
+        {
+          "name": "loadProducts",
+          "line": 107
+        },
+        {
+          "name": "response",
+          "line": 112
+        },
+        {
+          "name": "filteredProducts",
+          "line": 131
+        },
+        {
+          "name": "value",
+          "line": 132
+        },
+        {
+          "name": "totalProducts",
+          "line": 153
+        },
+        {
+          "name": "lowStockProducts",
+          "line": 155
+        },
+        {
+          "name": "stock",
+          "line": 156
+        },
+        {
+          "name": "minimum",
+          "line": 157
+        },
+        {
+          "name": "outOfStockProducts",
+          "line": 162
+        },
+        {
+          "name": "inventoryValue",
+          "line": 166
+        },
+        {
+          "name": "openModal",
+          "line": 174
+        },
+        {
+          "name": "closeModal",
+          "line": 180
+        },
+        {
+          "name": "handleChange",
+          "line": 188
+        },
+        {
+          "name": "validateForm",
+          "line": 201
+        },
+        {
+          "name": "handleSubmit",
+          "line": 242
+        },
+        {
+          "name": "validationError",
+          "line": 245
+        },
+        {
+          "name": "payload",
+          "line": 256
+        },
+        {
+          "name": "stockStatus",
+          "line": 511
+        },
+        {
+          "name": "stockStatus",
+          "line": 633
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/ServiceDetail.jsx",
+      "size": 61985,
+      "sha256": "be7b8f7262bc29014de3be7025ad6b8da878c392d600f05984b97fac4f5a6035",
+      "lines": 1907,
+      "status": "verificado (estático)",
+      "module": "F06/F07/F08/F10",
+      "dependencies": [
+        "../context/AuthContext",
+        "../services/api",
+        "lucide-react",
+        "react",
+        "react-router-dom"
+      ],
+      "evidence": [
+        {
+          "name": "STATUS_OPTIONS",
+          "line": 28
+        },
+        {
+          "name": "STATUS_STYLES",
+          "line": 38
+        },
+        {
+          "name": "INVOICE_TYPE_OPTIONS",
+          "line": 48
+        },
+        {
+          "name": "getErrorMessage",
+          "line": 69
+        },
+        {
+          "name": "detail",
+          "line": 70
+        },
+        {
+          "name": "formatCurrency",
+          "line": 89
+        },
+        {
+          "name": "normalizeServiceType",
+          "line": 97
+        },
+        {
+          "name": "isLicenseService",
+          "line": 103
+        },
+        {
+          "name": "type",
+          "line": 104
+        },
+        {
+          "name": "isClosedService",
+          "line": 113
+        },
+        {
+          "name": "getRole",
+          "line": 120
+        },
+        {
+          "name": "ServiceDetail",
+          "line": 132
+        },
+        {
+          "name": "navigate",
+          "line": 133
+        },
+        {
+          "name": "currentRole",
+          "line": 137
+        },
+        {
+          "name": "canManageInvoice",
+          "line": 171
+        },
+        {
+          "name": "loadService",
+          "line": 173
+        },
+        {
+          "name": "response",
+          "line": 178
+        },
+        {
+          "name": "loadProducts",
+          "line": 191
+        },
+        {
+          "name": "response",
+          "line": 195
+        },
+        {
+          "name": "loadInvoice",
+          "line": 217
+        },
+        {
+          "name": "response",
+          "line": 225
+        },
+        {
+          "name": "invoices",
+          "line": 227
+        },
+        {
+          "name": "existingInvoice",
+          "line": 231
+        },
+        {
+          "name": "handleUpdateStatus",
+          "line": 261
+        },
+        {
+          "name": "payload",
+          "line": 271
+        },
+        {
+          "name": "response",
+          "line": 279
+        },
+        {
+          "name": "openProductModal",
+          "line": 303
+        },
+        {
+          "name": "closeProductModal",
+          "line": 314
+        },
+        {
+          "name": "selectedProductData",
+          "line": 324
+        },
+        {
+          "name": "productSubtotal",
+          "line": 337
+        },
+        {
+          "name": "handleAddProduct",
+          "line": 348
+        },
+        {
+          "name": "quantity",
+          "line": 356
+        },
+        {
+          "name": "totalProducts",
+          "line": 411
+        },
+        {
+          "name": "baseAmount",
+          "line": 423
+        },
+        {
+          "name": "totalService",
+          "line": 425
+        },
+        {
+          "name": "productMap",
+          "line": 427
+        },
+        {
+          "name": "getProductName",
+          "line": 434
+        },
+        {
+          "name": "formatDate",
+          "line": 445
+        },
+        {
+          "name": "date",
+          "line": 450
+        },
+        {
+          "name": "formatDateTime",
+          "line": 463
+        },
+        {
+          "name": "date",
+          "line": 468
+        },
+        {
+          "name": "getClientName",
+          "line": 482
+        },
+        {
+          "name": "getEquipmentName",
+          "line": 492
+        },
+        {
+          "name": "selectedInvoiceType",
+          "line": 511
+        },
+        {
+          "name": "openInvoiceModal",
+          "line": 519
+        },
+        {
+          "name": "closeInvoiceModal",
+          "line": 545
+        },
+        {
+          "name": "handleInvoiceTypeChange",
+          "line": 554
+        },
+        {
+          "name": "selected",
+          "line": 557
+        },
+        {
+          "name": "handleCreateInvoice",
+          "line": 566
+        },
+        {
+          "name": "serie",
+          "line": 588
+        },
+        {
+          "name": "payload",
+          "line": 607
+        },
+        {
+          "name": "response",
+          "line": 618
+        },
+        {
+          "name": "openInvoiceDetail",
+          "line": 652
+        },
+        {
+          "name": "licenseService",
+          "line": 692
+        },
+        {
+          "name": "statusLabel",
+          "line": 694
+        },
+        {
+          "name": "selected",
+          "line": 1680
+        },
+        {
+          "name": "InfoItem",
+          "line": 1840
+        },
+        {
+          "name": "LicenseInfo",
+          "line": 1860
+        },
+        {
+          "name": "SummaryRow",
+          "line": 1874
+        },
+        {
+          "name": "getInitials",
+          "line": 1888
+        },
+        {
+          "name": "parts",
+          "line": 1893
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Services.jsx",
+      "size": 42142,
+      "sha256": "37b0e3d72101478725bd2ac006419eb9f04288e1319d36cacf3acf423bab65d7",
+      "lines": 1290,
+      "status": "verificado (estático)",
+      "module": "F06/F07/F08",
+      "dependencies": [
+        "../components/ImageUploadControl",
+        "../context/AuthContext",
+        "../services/api",
+        "lucide-react",
+        "react",
+        "react-router-dom"
+      ],
+      "evidence": [
+        {
+          "name": "SERVICE_TYPES",
+          "line": 26
+        },
+        {
+          "name": "STATUS_CONFIG",
+          "line": 37
+        },
+        {
+          "name": "INITIAL_FORM",
+          "line": 68
+        },
+        {
+          "name": "formatCurrency",
+          "line": 79
+        },
+        {
+          "name": "number",
+          "line": 80
+        },
+        {
+          "name": "formatDate",
+          "line": 88
+        },
+        {
+          "name": "date",
+          "line": 91
+        },
+        {
+          "name": "StatusBadge",
+          "line": 104
+        },
+        {
+          "name": "config",
+          "line": 105
+        },
+        {
+          "name": "Modal",
+          "line": 120
+        },
+        {
+          "name": "Services",
+          "line": 132
+        },
+        {
+          "name": "navigate",
+          "line": 133
+        },
+        {
+          "name": "handleQuickCreateEquipment",
+          "line": 162
+        },
+        {
+          "name": "res",
+          "line": 167
+        },
+        {
+          "name": "newEq",
+          "line": 175
+        },
+        {
+          "name": "currentRole",
+          "line": 197
+        },
+        {
+          "name": "canCreate",
+          "line": 202
+        },
+        {
+          "name": "fetchData",
+          "line": 206
+        },
+        {
+          "name": "requests",
+          "line": 211
+        },
+        {
+          "name": "responses",
+          "line": 221
+        },
+        {
+          "name": "getClientName",
+          "line": 246
+        },
+        {
+          "name": "client",
+          "line": 247
+        },
+        {
+          "name": "getEquipmentName",
+          "line": 260
+        },
+        {
+          "name": "item",
+          "line": 265
+        },
+        {
+          "name": "selectedClientEquipment",
+          "line": 277
+        },
+        {
+          "name": "filteredServices",
+          "line": 288
+        },
+        {
+          "name": "normalizedSearch",
+          "line": 289
+        },
+        {
+          "name": "clientName",
+          "line": 292
+        },
+        {
+          "name": "matchesSearch",
+          "line": 296
+        },
+        {
+          "name": "matchesStatus",
+          "line": 307
+        },
+        {
+          "name": "stats",
+          "line": 315
+        },
+        {
+          "name": "openCreateModal",
+          "line": 334
+        },
+        {
+          "name": "closeModal",
+          "line": 342
+        },
+        {
+          "name": "handleChange",
+          "line": 349
+        },
+        {
+          "name": "handleSubmit",
+          "line": 366
+        },
+        {
+          "name": "payload",
+          "line": 396
+        },
+        {
+          "name": "handleStatusChange",
+          "line": 437
+        },
+        {
+          "name": "handleNotify",
+          "line": 460
+        },
+        {
+          "name": "selectedEq",
+          "line": 1054
+        },
+        {
+          "name": "StatCard",
+          "line": 1261
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Superadmin.jsx",
+      "size": 17695,
+      "sha256": "2fc3518090b04d8dcf31355bab5ff83925c782089fc874fc04ec78f71205a19d",
+      "lines": 409,
+      "status": "verificado (estático)",
+      "module": "F02",
+      "dependencies": [
+        "../services/api",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "Superadmin",
+          "line": 5
+        },
+        {
+          "name": "fetchCompanies",
+          "line": 25
+        },
+        {
+          "name": "res",
+          "line": 28
+        },
+        {
+          "name": "handleInputChange",
+          "line": 41
+        },
+        {
+          "name": "handleCreateCompany",
+          "line": 46
+        },
+        {
+          "name": "handleToggleStatus",
+          "line": 73
+        },
+        {
+          "name": "filteredCompanies",
+          "line": 82
+        },
+        {
+          "name": "totalEmpresas",
+          "line": 88
+        },
+        {
+          "name": "empresasActivas",
+          "line": 89
+        },
+        {
+          "name": "empresasSuspendidas",
+          "line": 90
+        },
+        {
+          "name": "totalUsuariosSaaS",
+          "line": 91
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/pages/Users.jsx",
+      "size": 21362,
+      "sha256": "02d75c6c90486e84596eb7ae4fcfb5f7ba4e94ab152b68aeb7da638fa2382191",
+      "lines": 574,
+      "status": "verificado (estático)",
+      "module": "F03",
+      "dependencies": [
+        "../services/api",
+        "../utils/permissions",
+        "lucide-react",
+        "react"
+      ],
+      "evidence": [
+        {
+          "name": "ROLE_LABELS",
+          "line": 26
+        },
+        {
+          "name": "EMPTY_FORM",
+          "line": 33
+        },
+        {
+          "name": "Users",
+          "line": 42
+        },
+        {
+          "name": "loadData",
+          "line": 55
+        },
+        {
+          "name": "openCreateModal",
+          "line": 81
+        },
+        {
+          "name": "defaultTech",
+          "line": 82
+        },
+        {
+          "name": "openEditModal",
+          "line": 93
+        },
+        {
+          "name": "closeModal",
+          "line": 107
+        },
+        {
+          "name": "handleChange",
+          "line": 115
+        },
+        {
+          "name": "handlePermissionChange",
+          "line": 123
+        },
+        {
+          "name": "currentMod",
+          "line": 125
+        },
+        {
+          "name": "handleSubmit",
+          "line": 144
+        },
+        {
+          "name": "payload",
+          "line": 173
+        },
+        {
+          "name": "filteredUsers",
+          "line": 205
+        },
+        {
+          "name": "text",
+          "line": 206
+        },
+        {
+          "name": "totalUsers",
+          "line": 210
+        },
+        {
+          "name": "activeUsers",
+          "line": 211
+        },
+        {
+          "name": "inactiveUsers",
+          "line": 212
+        },
+        {
+          "name": "adminUsers",
+          "line": 213
+        },
+        {
+          "name": "selectedRoleObj",
+          "line": 217
+        },
+        {
+          "name": "isAdminSelected",
+          "line": 218
+        },
+        {
+          "name": "hasAccess",
+          "line": 340
+        },
+        {
+          "name": "p",
+          "line": 486
+        },
+        {
+          "name": "KpiCard",
+          "line": 533
+        },
+        {
+          "name": "Avatar",
+          "line": 547
+        },
+        {
+          "name": "initial",
+          "line": 548
+        },
+        {
+          "name": "RoleBadge",
+          "line": 556
+        },
+        {
+          "name": "StatusBadge",
+          "line": 564
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/services/api.js",
+      "size": 633,
+      "sha256": "ff3be147d50bfda41cb752be588c536c130335a0edbad5a3ccd2ea2e2687791e",
+      "lines": 27,
+      "status": "verificado (estático)",
+      "module": "F01/F16",
+      "dependencies": [
+        "axios"
+      ],
+      "evidence": [
+        {
+          "name": "api",
+          "line": 3
+        },
+        {
+          "name": "token",
+          "line": 8
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    },
+    {
+      "path": "frontend/src/utils/permissions.js",
+      "size": 2426,
+      "sha256": "f4ca74e7c0f428038f216e676e6df63453b623df3755456fc9da35ed3a34e71f",
+      "lines": 73,
+      "status": "verificado (estático)",
+      "module": "F03/F16",
+      "dependencies": [],
+      "evidence": [
+        {
+          "name": "MODULES",
+          "line": 5
+        },
+        {
+          "name": "DEFAULT_PERMISSIONS",
+          "line": 15
+        },
+        {
+          "name": "buildUserPermissions",
+          "line": 28
+        },
+        {
+          "name": "normalized",
+          "line": 29
+        },
+        {
+          "name": "defaultMod",
+          "line": 31
+        },
+        {
+          "name": "hasModulePermission",
+          "line": 50
+        },
+        {
+          "name": "role",
+          "line": 53
+        },
+        {
+          "name": "permisos",
+          "line": 69
+        },
+        {
+          "name": "modPerms",
+          "line": 70
+        }
+      ],
+      "pending": "Sin recorrido de código propio pendiente; ejecución y entorno excluidos (U01–U10 según módulo)",
+      "inspection": "Lógica, declaraciones y referencias; UI: handlers, datos, condiciones y enlaces; configuración/lock: estructura y valores declarados; vacío: tamaño confirmado"
+    }
+  ],
+  "status": "Cobertura estática cerrada; sin validación de instancia",
+  "verification": {
+    "unchanged_text_files": true,
+    "python_ast_parsed": 70,
+    "json_parsed": 3,
+    "unresolved_local_imports": [],
+    "modules": 17
+  },
+  "final_verification": {
+    "date": "2026-10-13",
+    "scope": "verificación estática; sin importar ni ejecutar aplicación",
+    "original_text_files": 113,
+    "binary_metadata_only": 2,
+    "unchanged_source_hashes": true,
+    "python_ast_parsed": 70,
+    "business_http_operations": 42,
+    "orm_tables": 15,
+    "source_line_references_checked": 690,
+    "local_links_checked": 426,
+    "mermaid_sources": 12,
+    "inventory_matches": true,
+    "errors": [],
+    "not_executed": [
+      "pytest",
+      "npm/build/lint",
+      "Docker",
+      "Alembic",
+      "init_db",
+      "render UI/PDF/Mermaid",
+      "conexión PostgreSQL",
+      "HTTP a aplicación o servicios externos"
+    ]
+  }
+}

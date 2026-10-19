@@ -1,0 +1,24 @@
+sequenceDiagram
+  participant PC as Formulario PC
+  participant API as uploads
+  participant QR as qrserver.com
+  participant MOV as Navegador movil
+  participant FS as Disco
+  PC->>API: POST session/create sin login requerido
+  API->>API: Guardar UUID PENDING en diccionario
+  API-->>PC: session_id y fecha
+  PC->>QR: GET imagen con URL completa de captura
+  QR-->>PC: Imagen QR
+  MOV->>MOV: Abrir captura-movil/ID, seleccionar imagen
+  MOV->>API: POST session/ID/upload multipart
+  API->>API: Comprobar sesion y MIME declarado
+  API->>FS: Escribir foto completa
+  API->>API: Marcar COMPLETED y photo_url
+  API-->>MOV: COMPLETED
+  loop Cada 1500 ms mientras PENDING y modal abierto
+    PC->>API: GET session/ID
+    API-->>PC: Estado y URL
+  end
+  PC->>PC: onChange URL y cerrar modal
+  Note over PC,API: Persistir URL en entidad requiere guardar formulario
+  Note over API,FS: Reinicio pierde sesiones; no elimina fotos

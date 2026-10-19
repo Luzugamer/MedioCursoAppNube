@@ -1,0 +1,16 @@
+flowchart TD
+  A[Registrar pago] --> B[Schema: monto positivo y metodo enum]
+  B --> C[Consultar servicio del ambito]
+  C --> D{Existe y no CANCELADO?}
+  D -- No --> E[404 o 400]
+  D -- Si --> F[Total: base + items; pagado: solo PAGADO]
+  F --> G[Redondear importe HALF_UP a dos decimales]
+  G --> H{Importe positivo y no supera saldo?}
+  H -- No --> I[400 sin insertar pago]
+  H -- Si --> J[INSERT Payment PAGADO y commit]
+  J --> K[Audit y commit]
+  K --> L[Devolver pago y recargar UI]
+  M[Anular pago existente] --> N{Ya ANULADO?}
+  N -- Si --> I
+  N -- No --> O[UPDATE ANULADO; commit y auditoria]
+  O --> P[Proximos calculos dejan de sumarlo]

@@ -1,0 +1,36 @@
+sequenceDiagram
+  actor U as Operador
+  participant UI as Services.jsx
+  participant LIST as Routers de consulta
+  participant EQ as equipment.create_equipment
+  participant API as services.create_service
+  participant DB as PostgreSQL
+  UI->>LIST: GET services, clients, equipment
+  LIST->>DB: Consultas filtradas por empresa
+  LIST-->>UI: Listados
+  opt ADMIN
+    UI->>LIST: GET users
+    LIST->>DB: Consultar usuarios
+    LIST-->>UI: Usuarios
+  end
+  opt Alta rapida de equipo
+    U->>UI: Datos de equipo
+    UI->>EQ: POST equipment
+    EQ->>DB: Validar cliente; INSERT; commit; Audit
+    EQ-->>UI: Equipo ya persistido
+  end
+  U->>UI: Guardar orden
+  UI->>API: POST ServiceCreate
+  API->>DB: Buscar cliente del ambito
+  opt equipo_id no null
+    API->>DB: Buscar equipo del cliente y ambito
+    API->>DB: Actualizar imagen si enviada
+  end
+  alt cliente o equipo invalido
+    API-->>UI: 404 o 400
+  else valido
+    API->>DB: INSERT Service RECIBIDO y commit
+    API->>DB: Audit y segundo commit
+    API-->>UI: ServiceResponse con items
+    UI->>UI: Recargar y cerrar modal
+  end

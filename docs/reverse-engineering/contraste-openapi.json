@@ -1,0 +1,183 @@
+{
+  "scope": "Compara operaciones y nombres de campos, no equivalencia semántica completa de schemas",
+  "missing_operations": [
+    [
+      "DELETE",
+      "/api/licenses/{license_id}"
+    ],
+    [
+      "GET",
+      "/api/companies/"
+    ],
+    [
+      "GET",
+      "/api/invoices/{invoice_id}/pdf"
+    ],
+    [
+      "GET",
+      "/api/licenses/"
+    ],
+    [
+      "GET",
+      "/api/uploads/session/{session_id}"
+    ],
+    [
+      "GET",
+      "/api/users/roles"
+    ],
+    [
+      "PATCH",
+      "/api/companies/{company_id}/toggle-status"
+    ],
+    [
+      "POST",
+      "/api/companies/"
+    ],
+    [
+      "POST",
+      "/api/licenses/"
+    ],
+    [
+      "POST",
+      "/api/uploads/file"
+    ],
+    [
+      "POST",
+      "/api/uploads/session/create"
+    ],
+    [
+      "POST",
+      "/api/uploads/session/{session_id}/upload"
+    ],
+    [
+      "PUT",
+      "/api/companies/{company_id}"
+    ],
+    [
+      "PUT",
+      "/api/licenses/{license_id}"
+    ],
+    [
+      "PUT",
+      "/api/users/{user_id}"
+    ]
+  ],
+  "removed_operations": [],
+  "schema_field_changes": {
+    "Token": {
+      "agregados": [
+        "empresa_id",
+        "empresa_nombre",
+        "permisos"
+      ],
+      "retirados": []
+    },
+    "ClientBase": {
+      "estado": "schema ausente en snapshot"
+    },
+    "CompanyBase": {
+      "estado": "schema ausente en snapshot"
+    },
+    "CompanyCreate": {
+      "estado": "schema ausente en snapshot"
+    },
+    "CompanyUpdate": {
+      "estado": "schema ausente en snapshot"
+    },
+    "CompanyResponse": {
+      "estado": "schema ausente en snapshot"
+    },
+    "CompanyWithAdminCreate": {
+      "estado": "schema ausente en snapshot"
+    },
+    "EquipmentBase": {
+      "estado": "schema ausente en snapshot"
+    },
+    "EquipmentCreate": {
+      "agregados": [
+        "imagen_url"
+      ],
+      "retirados": []
+    },
+    "EquipmentResponse": {
+      "agregados": [
+        "imagen_url"
+      ],
+      "retirados": []
+    },
+    "InventoryMovementCreate": {
+      "estado": "schema ausente en snapshot"
+    },
+    "InventoryMovementResponse": {
+      "estado": "schema ausente en snapshot"
+    },
+    "InvoiceItemCreate": {
+      "estado": "schema ausente en snapshot"
+    },
+    "LicenseBase": {
+      "estado": "schema ausente en snapshot"
+    },
+    "LicenseCreate": {
+      "estado": "schema ausente en snapshot"
+    },
+    "LicenseUpdate": {
+      "estado": "schema ausente en snapshot"
+    },
+    "LicenseResponse": {
+      "estado": "schema ausente en snapshot"
+    },
+    "ProductBase": {
+      "estado": "schema ausente en snapshot"
+    },
+    "ProductUpdate": {
+      "estado": "schema ausente en snapshot"
+    },
+    "ServiceBase": {
+      "estado": "schema ausente en snapshot"
+    },
+    "ServiceCreate": {
+      "agregados": [
+        "imagen_url"
+      ],
+      "retirados": []
+    },
+    "ServiceUpdateStatus": {
+      "agregados": [
+        "imagen_url"
+      ],
+      "retirados": []
+    },
+    "ServiceResponse": {
+      "agregados": [
+        "imagen_url"
+      ],
+      "retirados": []
+    },
+    "ServiceItemCreate": {
+      "estado": "schema ausente en snapshot"
+    },
+    "UserBase": {
+      "estado": "schema ausente en snapshot"
+    },
+    "UserCreate": {
+      "agregados": [
+        "empresa_id",
+        "permisos"
+      ],
+      "retirados": []
+    },
+    "UserUpdate": {
+      "estado": "schema ausente en snapshot"
+    },
+    "UserResponse": {
+      "agregados": [
+        "empresa_id",
+        "permisos"
+      ],
+      "retirados": []
+    },
+    "SessionResponse": {
+      "estado": "schema ausente en snapshot"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+sequenceDiagram
+  actor U as Administrador en UI
+  participant UI as ServiceDetail / Invoices
+  participant API as invoices router
+  participant DB as PostgreSQL
+  U->>UI: Emitir tipo, serie y observaciones
+  UI->>API: POST invoices
+  API->>DB: SELECT orden, items, cliente y comprobante previo
+  alt cancelado / duplicado / inexistente
+    API-->>UI: 400 / 404
+  else valido
+    API->>API: Calcular base + items y snapshot cliente
+    API->>DB: SELECT mayor numero por empresa, tipo y serie
+    API->>DB: INSERT Invoice, flush y detalles
+    API->>DB: log_audit confirma sesion
+    API-->>UI: InvoiceResponse
+  end
+  U->>UI: Descargar PDF
+  UI->>API: GET invoices/id/pdf con Bearer
+  API->>DB: SELECT por ID, sin filtro de empresa
+  API->>API: Construir PDF ReportLab en BytesIO
+  API-->>UI: application/pdf attachment
+  UI->>UI: Blob, enlace download y revokeObjectURL
+  opt Anular
+    UI->>API: PATCH invoices/id/anular
+    API->>DB: Filtrar empresa; cambiar estado; auditar y commit
+  end
